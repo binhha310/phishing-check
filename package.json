@@ -3,14 +3,33 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "dev": "nodemon --ignore 'databases.json' --exec 'npm start'",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node --experimental-json-modules app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "@tensorflow/tfjs-node": "^3.8.0",
+    "bson": "^4.4.1",
+    "caa": "^7.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "formidable": "^1.2.2",
+    "get-website-favicon": "^0.0.7",
+    "is-ip": "^3.1.0",
+    "jsdom": "^17.0.0",
+    "node-fetch": "^2.6.1",
+    "node-port-scanner": "^3.0.1",
+    "normalize-url": "^7.0.1",
+    "playwright": "^1.14.1",
+    "ramda": "^0.27.1",
+    "url-pattern": "^1.0.3",
+    "whois-light": "^1.1.1",
+    "whoiser": "^1.13.0",
+    "xmlhttprequest": "^1.8.0"
   }
 }
